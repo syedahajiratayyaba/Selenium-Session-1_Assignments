@@ -1,0 +1,166 @@
+{
+  "id": "40cf07cd-fb57-4720-ada0-cd00841104e9",
+  "version": "1.1",
+  "name": "MagentoApplicationTest",
+  "url": "https://magento.com",
+  "tests": [{
+    "id": "c14d18ba-a8cb-491d-afac-55ce9c4cd2a9",
+    "name": "TestCase1",
+    "commands": [{
+      "id": "758976fc-cbcb-4d3d-b4b6-66ba767205e7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da0c0fa-6351-4fdf-93ce-61bda9e39fc7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x835",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0080533-4925-424e-8caa-34f37fb6bad0",
+      "comment": "",
+      "command": "click",
+      "target": "css=i.fa.fa-user",
+      "targets": [
+        ["css=i.fa.fa-user", "css"],
+        ["css=.fa-user", "css:finder"],
+        ["xpath=//nav[@id='block-header']/ul/li[9]/a/span/i", "xpath:idRelative"],
+        ["xpath=//li[9]/a/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0faf2e0e-99d2-4f68-bd78-e085800efb61",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=login[username]", "name"],
+        ["css=#email", "css"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div/ul/li/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c24999d1-373f-46ca-86bd-d0aef615fc6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=login[username]", "name"],
+        ["css=#email", "css"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div/ul/li/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "balajidinakaran1@gmail.com"
+    }, {
+      "id": "484b3115-6295-427a-b25d-ce7ea189faff",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=login[password]", "name"],
+        ["css=#pass", "css"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div/ul/li[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3096f9c9-7f16-4954-90ce-859221c53b9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=login[password]", "name"],
+        ["css=#pass", "css"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div/ul/li[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Welcome123"
+    }, {
+      "id": "7a5ae874-7187-4a7e-9369-ac91e2835a65",
+      "comment": "",
+      "command": "click",
+      "target": "id=send2",
+      "targets": [
+        ["id=send2", "id"],
+        ["name=send", "name"],
+        ["css=#send2", "css"],
+        ["css=#send2", "css:finder"],
+        ["xpath=//button[@id='send2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1425b61-0728-4f1b-b86c-7a750d68b7c6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=div.account-help > a", "css"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='screen-page']/div[3]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://account.magento.com/customer/account/logout/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "019216db-df9b-4c3f-9343-e73a6024194c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "My Account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b586c00f-1e88-462b-847e-8e94d14aa6c5",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "My Account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ecd1689-7527-4fe7-bd50-a69998b5c06a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=div.account-help > a", "css"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='screen-page']/div[3]/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://account.magento.com/customer/account/logout/')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "239019d4-f788-45ae-8648-0e89fdff3327",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c14d18ba-a8cb-491d-afac-55ce9c4cd2a9"]
+  }],
+  "urls": ["https://magento.com/"],
+  "plugins": []
+}
